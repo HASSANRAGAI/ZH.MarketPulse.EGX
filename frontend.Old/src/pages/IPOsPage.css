@@ -1,0 +1,65 @@
+﻿.ipos-page {
+  padding: 20px;
+  background: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.ipos-page .cards-container {
+  /*display: grid;*/
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.ipos-page .ipo-card {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #2d2d2d;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.ipos-page .ipo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.ipos-page .card-header {
+  background: #3a3a3a;
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.ipos-page .card-header h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.ipos-page .card-content {
+  padding: 15px;
+}
+
+.ipos-page .card-content p {
+  margin: 5px 0;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+.ipos-page .card-content strong {
+  color: #fff;
+}
+
+.ipos-page .card-content a {
+  color: #4a9eff;
+  text-decoration: none;
+}
+
+.ipos-page .card-content a:hover {
+  text-decoration: underline;
+  color: #6bb3ff;
+}

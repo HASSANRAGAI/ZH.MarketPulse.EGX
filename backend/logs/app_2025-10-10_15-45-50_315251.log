@@ -1,0 +1,16 @@
+2025-10-10 15:45:51.902 | INFO     | collector.api.app:startup_event:64 - 🚀 Starting Collector Microservice
+2025-10-10 15:45:51.903 | INFO     | shared.db_init:initialize_database:132 - 🚀 Starting database initialization...
+2025-10-10 15:45:51.907 | INFO     | shared.db_init:create_database_schema:41 - Creating database schema...
+2025-10-10 15:45:51.922 | INFO     | shared.db_init:create_database_schema:43 - ✅ Database schema created successfully
+2025-10-10 15:45:51.927 | INFO     | shared.db_init:seed_config_data:57 - Seeding configuration data...
+2025-10-10 15:45:51.991 | INFO     | shared.db_init:seed_config_data:94 - ✅ Configuration data seeded successfully
+2025-10-10 15:45:51.992 | INFO     | shared.db_init:initialize_database:155 - 🎉 Database initialization completed successfully!
+2025-10-10 15:45:51.995 | INFO     | collector.api.app:startup_event:73 - ✅ Database initialized successfully
+2025-10-10 15:45:52.002 | INFO     | collector.api.app:startup_event:81 - ✅ Database connection established
+2025-10-10 15:46:32.231 | INFO     | collector.api.routes.fair_values:get_fair_values:91 - 📊 Fetching fair values from database
+2025-10-10 15:46:32.252 | INFO     | collector.api.routes.fair_values:get_fair_values:118 - ✅ Retrieved 60 fair value records
+2025-10-10 15:46:47.262 | INFO     | collector.api.routes.fair_values:get_fair_values:91 - 📊 Fetching fair values from database
+2025-10-10 15:46:47.271 | INFO     | collector.api.routes.fair_values:get_fair_values:118 - ✅ Retrieved 60 fair value records
+2025-10-10 15:46:47.277 | INFO     | collector.api.routes.fair_values:get_fair_values:91 - 📊 Fetching fair values from database
+2025-10-10 15:46:47.288 | INFO     | collector.api.routes.fair_values:get_fair_values:118 - ✅ Retrieved 60 fair value records
+2025-10-10 16:00:27.530 | INFO     | collector.api.app:shutdown_event:88 - 🛑 Shutting down Collector Microservice

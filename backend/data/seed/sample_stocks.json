@@ -1,0 +1,42 @@
+[
+  {
+    "symbol": "HRHO",
+    "name_en": "Egyptian Iron & Steel",
+    "name_ar": "الحديد والصلب المصرية",
+    "sector_en": "Basic Materials",
+    "sector_ar": "المواد الأساسية",
+    "reuters_code": "HRHO.CA"
+  },
+  {
+    "symbol": "COMI",
+    "name_en": "Commercial International Bank",
+    "name_ar": "البنك التجاري الدولي",
+    "sector_en": "Financial Services",
+    "sector_ar": "الخدمات المالية",
+    "reuters_code": "COMI.CA"
+  },
+  {
+    "symbol": "ETEL",
+    "name_en": "Telecom Egypt",
+    "name_ar": "مصر للإتصالات",
+    "sector_en": "Telecommunications",
+    "sector_ar": "الاتصالات",
+    "reuters_code": "ETEL.CA"
+  },
+  {
+    "symbol": "ORAS",
+    "name_en": "Orascom Construction",
+    "name_ar": "أوراسكوم للإنشاءات",
+    "sector_en": "Industrials",
+    "sector_ar": "الصناعات",
+    "reuters_code": "ORAS.CA"
+  },
+  {
+    "symbol": "EGAL",
+    "name_en": "Egyptian Arab Land Bank",
+    "name_ar": "البنك الأهلي المصري العربي الوطني",
+    "sector_en": "Financial Services",
+    "sector_ar": "الخدمات المالية",
+    "reuters_code": "EGAL.CA"
+  }
+]

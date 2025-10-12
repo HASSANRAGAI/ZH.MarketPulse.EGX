@@ -1,0 +1,51 @@
+2025-10-10 19:26:26.787 | INFO     | collector.api.app:startup_event:70 - 🚀 Starting Collector Microservice
+2025-10-10 19:26:26.788 | INFO     | shared.db_init:initialize_database:132 - 🚀 Starting database initialization...
+2025-10-10 19:26:26.792 | INFO     | shared.db_init:create_database_schema:41 - Creating database schema...
+2025-10-10 19:26:26.806 | INFO     | shared.db_init:create_database_schema:43 - ✅ Database schema created successfully
+2025-10-10 19:26:26.811 | INFO     | shared.db_init:seed_config_data:57 - Seeding configuration data...
+2025-10-10 19:26:26.856 | INFO     | shared.db_init:seed_config_data:94 - ✅ Configuration data seeded successfully
+2025-10-10 19:26:26.857 | INFO     | shared.db_init:initialize_database:155 - 🎉 Database initialization completed successfully!
+2025-10-10 19:26:26.858 | INFO     | collector.api.app:startup_event:79 - ✅ Database initialized successfully
+2025-10-10 19:26:26.860 | INFO     | collector.api.app:startup_event:87 - ✅ Database connection established
+2025-10-10 19:26:39.309 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x7d687ced4250>,), kwargs: {}
+2025-10-10 19:26:39.310 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0013 seconds
+2025-10-10 19:26:39.332 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:26:39.429 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:26:39.430 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:26:39.439 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x7d687ced4250>,), kwargs: {}
+2025-10-10 19:26:39.440 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0009 seconds
+2025-10-10 19:26:39.449 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:26:39.496 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:26:39.497 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:26:53.121 | INFO     | collector.api.routes.ipos:get_ipos:91 - 📊 Fetching IPOs from database
+2025-10-10 19:26:53.131 | ERROR    | shared.custom_logging:log_error_with_exception:30 - Failed to fetch IPOs | Exception: AttributeError: type object 'IPO' has no attribute 'source_id' | File: /app/collector/api/routes/ipos.py:102
+2025-10-10 19:26:53.136 | INFO     | collector.api.routes.ipos:get_ipos:91 - 📊 Fetching IPOs from database
+2025-10-10 19:26:53.144 | ERROR    | shared.custom_logging:log_error_with_exception:30 - Failed to fetch IPOs | Exception: AttributeError: type object 'IPO' has no attribute 'source_id' | File: /app/collector/api/routes/ipos.py:102
+2025-10-10 19:26:57.575 | INFO     | collector.api.routes.fair_values:get_fair_values:91 - 📊 Fetching fair values from database
+2025-10-10 19:26:57.578 | ERROR    | shared.custom_logging:log_error_with_exception:30 - Failed to fetch fair values | Exception: AttributeError: type object 'Stock' has no attribute 'market_en' | File: /app/collector/api/routes/fair_values.py:100
+2025-10-10 19:26:57.583 | INFO     | collector.api.routes.fair_values:get_fair_values:91 - 📊 Fetching fair values from database
+2025-10-10 19:26:57.586 | ERROR    | shared.custom_logging:log_error_with_exception:30 - Failed to fetch fair values | Exception: AttributeError: type object 'Stock' has no attribute 'market_en' | File: /app/collector/api/routes/fair_values.py:100
+2025-10-10 19:27:04.998 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x7d687ced4250>,), kwargs: {}
+2025-10-10 19:27:04.999 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0010 seconds
+2025-10-10 19:27:05.019 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:27:05.188 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:27:05.189 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:27:05.208 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x7d687ced4250>,), kwargs: {}
+2025-10-10 19:27:05.210 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0014 seconds
+2025-10-10 19:27:05.229 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:27:05.326 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:27:05.328 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:27:15.849 | INFO     | collector.api.routes.fair_values:get_fair_values:91 - 📊 Fetching fair values from database
+2025-10-10 19:27:15.850 | ERROR    | shared.custom_logging:log_error_with_exception:30 - Failed to fetch fair values | Exception: AttributeError: type object 'Stock' has no attribute 'market_en' | File: /app/collector/api/routes/fair_values.py:100
+2025-10-10 19:27:15.854 | INFO     | collector.api.routes.fair_values:get_fair_values:91 - 📊 Fetching fair values from database
+2025-10-10 19:27:15.854 | ERROR    | shared.custom_logging:log_error_with_exception:30 - Failed to fetch fair values | Exception: AttributeError: type object 'Stock' has no attribute 'market_en' | File: /app/collector/api/routes/fair_values.py:100
+2025-10-10 19:29:19.991 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x7d687ced4250>,), kwargs: {}
+2025-10-10 19:29:19.993 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0021 seconds
+2025-10-10 19:29:20.003 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:29:20.031 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:29:20.032 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:29:20.274 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x7d687ced4250>,), kwargs: {}
+2025-10-10 19:29:20.275 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0007 seconds
+2025-10-10 19:29:20.280 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:29:20.314 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 274 stocks returned
+2025-10-10 19:29:20.315 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 274 stocks returned

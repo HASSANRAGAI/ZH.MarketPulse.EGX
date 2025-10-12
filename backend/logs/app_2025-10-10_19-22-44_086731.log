@@ -1,0 +1,162 @@
+2025-10-10 19:22:45.541 | INFO     | collector.api.app:startup_event:70 - 🚀 Starting Collector Microservice
+2025-10-10 19:22:45.542 | INFO     | shared.db_init:initialize_database:132 - 🚀 Starting database initialization...
+2025-10-10 19:22:45.547 | INFO     | shared.db_init:create_database_schema:41 - Creating database schema...
+2025-10-10 19:22:45.566 | INFO     | shared.db_init:create_database_schema:43 - ✅ Database schema created successfully
+2025-10-10 19:22:45.572 | INFO     | shared.db_init:seed_config_data:57 - Seeding configuration data...
+2025-10-10 19:22:45.629 | INFO     | shared.db_init:seed_config_data:94 - ✅ Configuration data seeded successfully
+2025-10-10 19:22:45.630 | INFO     | shared.db_init:initialize_database:155 - 🎉 Database initialization completed successfully!
+2025-10-10 19:22:45.631 | INFO     | collector.api.app:startup_event:79 - ✅ Database initialized successfully
+2025-10-10 19:22:45.633 | INFO     | collector.api.app:startup_event:87 - ✅ Database connection established
+2025-10-10 19:23:01.352 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:23:01.353 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0009 seconds
+2025-10-10 19:23:01.360 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 0 active stocks from database
+2025-10-10 19:23:01.361 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:23:01.362 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:23:01.364 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:23:01.365 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0009 seconds
+2025-10-10 19:23:01.368 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 0 active stocks from database
+2025-10-10 19:23:01.369 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:23:01.370 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:23:01.535 | INFO     | collector.api.routes.stocks:collect_stocks_sync:48 - 🚀 Starting synchronous stock collection via API
+2025-10-10 19:23:01.535 | INFO     | shared.custom_logging:wrapper:39 - Starting collect_and_save_stocks with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:23:01.536 | INFO     | shared.custom_logging:wrapper:43 - Finished collect_and_save_stocks in 0.0008 seconds
+2025-10-10 19:23:01.537 | INFO     | collector.StockCollector:collect_and_save_stocks:280 - 🎯 Starting complete stock collection and database update
+2025-10-10 19:23:01.537 | INFO     | collector.StockCollector:collect_all_stocks:147 - 🚀 Starting stock collection from Mubasher API
+2025-10-10 19:23:01.538 | INFO     | collector.StockCollector:_fetch_stocks_arabic:44 - 🌐 Fetching Arabic stocks from: https://www.mubasher.info/api/1/listed-companies?country=eg&size=600&start=0
+2025-10-10 19:23:01.759 | INFO     | shared.http_client:_ensure_initialized:35 - ✅ HTTP client initialized successfully
+2025-10-10 19:23:01.767 | INFO     | collector.StockCollector:_fetch_stocks_english:67 - 🌐 Fetching English stocks from: https://english.mubasher.info/api/1/listed-companies?country=eg&size=600&start=0
+2025-10-10 19:23:01.779 | INFO     | collector.api.routes.stocks:collect_stocks_sync:48 - 🚀 Starting synchronous stock collection via API
+2025-10-10 19:23:01.780 | INFO     | shared.custom_logging:wrapper:39 - Starting collect_and_save_stocks with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:23:01.781 | INFO     | shared.custom_logging:wrapper:43 - Finished collect_and_save_stocks in 0.0008 seconds
+2025-10-10 19:23:01.782 | INFO     | collector.StockCollector:collect_and_save_stocks:280 - 🎯 Starting complete stock collection and database update
+2025-10-10 19:23:01.782 | INFO     | collector.StockCollector:collect_all_stocks:147 - 🚀 Starting stock collection from Mubasher API
+2025-10-10 19:23:01.783 | INFO     | collector.StockCollector:_fetch_stocks_arabic:44 - 🌐 Fetching Arabic stocks from: https://www.mubasher.info/api/1/listed-companies?country=eg&size=600&start=0
+2025-10-10 19:23:01.785 | INFO     | collector.StockCollector:_fetch_stocks_english:67 - 🌐 Fetching English stocks from: https://english.mubasher.info/api/1/listed-companies?country=eg&size=600&start=0
+2025-10-10 19:23:03.191 | INFO     | collector.StockCollector:_fetch_stocks_arabic:50 - ✅ Fetched 274 Arabic stocks from page 0
+2025-10-10 19:23:03.203 | INFO     | collector.StockCollector:_fetch_stocks_english:73 - ✅ Fetched 274 English stocks from page 0
+2025-10-10 19:23:03.205 | INFO     | collector.StockCollector:_fetch_stocks_arabic:50 - ✅ Fetched 274 Arabic stocks from page 0
+2025-10-10 19:23:03.207 | INFO     | collector.StockCollector:collect_all_stocks:170 - 📄 Collected page 1/1 with 274 stocks
+2025-10-10 19:23:03.207 | INFO     | collector.StockCollector:collect_all_stocks:185 - ✅ Collected total of 274 stocks
+2025-10-10 19:23:04.050 | INFO     | collector.StockCollector:save_stocks_to_db:264 - 💾 Saved/updated 274 stocks in database
+2025-10-10 19:23:04.051 | INFO     | collector.StockCollector:collect_and_save_stocks:292 - 🎉 Stock collection completed: 274 stocks processed
+2025-10-10 19:23:04.052 | INFO     | collector.StockCollector:run_stock_collection:360 - ✅ Stock collection completed: 274 stocks processed
+2025-10-10 19:23:04.052 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:23:04.053 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0005 seconds
+2025-10-10 19:23:04.057 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:23:04.065 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_en
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:23:04.065 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:23:04.068 | INFO     | collector.StockCollector:_fetch_stocks_english:73 - ✅ Fetched 274 English stocks from page 0
+2025-10-10 19:23:04.069 | INFO     | collector.StockCollector:collect_all_stocks:170 - 📄 Collected page 1/1 with 274 stocks
+2025-10-10 19:23:04.070 | INFO     | collector.StockCollector:collect_all_stocks:185 - ✅ Collected total of 274 stocks
+2025-10-10 19:23:05.318 | INFO     | collector.StockCollector:save_stocks_to_db:264 - 💾 Saved/updated 274 stocks in database
+2025-10-10 19:23:05.326 | INFO     | collector.StockCollector:collect_and_save_stocks:292 - 🎉 Stock collection completed: 274 stocks processed
+2025-10-10 19:23:05.327 | INFO     | collector.StockCollector:run_stock_collection:360 - ✅ Stock collection completed: 274 stocks processed
+2025-10-10 19:23:05.328 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:23:05.329 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0013 seconds
+2025-10-10 19:23:05.359 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:23:05.396 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_en
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:23:05.406 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:23:05.424 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:23:05.425 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0012 seconds
+2025-10-10 19:23:05.443 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:23:05.465 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_en
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:23:05.467 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:23:05.468 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:23:05.471 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:23:05.472 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0009 seconds
+2025-10-10 19:23:05.484 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:23:05.499 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_en
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:23:05.500 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:23:05.501 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:18.829 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:24:18.830 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0007 seconds
+2025-10-10 19:24:18.835 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:24:18.843 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_en
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:24:18.844 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:18.845 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:19.058 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:24:19.059 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0007 seconds
+2025-10-10 19:24:19.065 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:24:19.071 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_en
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:24:19.072 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:19.072 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:19.327 | INFO     | collector.api.routes.stocks:collect_stocks_sync:48 - 🚀 Starting synchronous stock collection via API
+2025-10-10 19:24:19.328 | INFO     | shared.custom_logging:wrapper:39 - Starting collect_and_save_stocks with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:24:19.328 | INFO     | shared.custom_logging:wrapper:43 - Finished collect_and_save_stocks in 0.0008 seconds
+2025-10-10 19:24:19.329 | INFO     | collector.StockCollector:collect_and_save_stocks:280 - 🎯 Starting complete stock collection and database update
+2025-10-10 19:24:19.330 | INFO     | collector.StockCollector:collect_all_stocks:147 - 🚀 Starting stock collection from Mubasher API
+2025-10-10 19:24:19.331 | INFO     | collector.StockCollector:_fetch_stocks_arabic:44 - 🌐 Fetching Arabic stocks from: https://www.mubasher.info/api/1/listed-companies?country=eg&size=600&start=0
+2025-10-10 19:24:19.333 | INFO     | collector.StockCollector:_fetch_stocks_english:67 - 🌐 Fetching English stocks from: https://english.mubasher.info/api/1/listed-companies?country=eg&size=600&start=0
+2025-10-10 19:24:19.712 | INFO     | collector.StockCollector:_fetch_stocks_arabic:50 - ✅ Fetched 274 Arabic stocks from page 0
+2025-10-10 19:24:19.716 | INFO     | collector.StockCollector:_fetch_stocks_english:73 - ✅ Fetched 274 English stocks from page 0
+2025-10-10 19:24:19.718 | INFO     | collector.StockCollector:collect_all_stocks:170 - 📄 Collected page 1/1 with 274 stocks
+2025-10-10 19:24:19.719 | INFO     | collector.StockCollector:collect_all_stocks:185 - ✅ Collected total of 274 stocks
+2025-10-10 19:24:20.564 | INFO     | collector.StockCollector:save_stocks_to_db:264 - 💾 Saved/updated 274 stocks in database
+2025-10-10 19:24:20.564 | INFO     | collector.StockCollector:collect_and_save_stocks:292 - 🎉 Stock collection completed: 274 stocks processed
+2025-10-10 19:24:20.565 | INFO     | collector.StockCollector:run_stock_collection:360 - ✅ Stock collection completed: 274 stocks processed
+2025-10-10 19:24:20.566 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:24:20.566 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0007 seconds
+2025-10-10 19:24:20.572 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:24:20.586 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_ar
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:24:20.587 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:20.785 | INFO     | collector.api.routes.stocks:collect_stocks_sync:48 - 🚀 Starting synchronous stock collection via API
+2025-10-10 19:24:20.786 | INFO     | shared.custom_logging:wrapper:39 - Starting collect_and_save_stocks with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:24:20.786 | INFO     | shared.custom_logging:wrapper:43 - Finished collect_and_save_stocks in 0.0008 seconds
+2025-10-10 19:24:20.787 | INFO     | collector.StockCollector:collect_and_save_stocks:280 - 🎯 Starting complete stock collection and database update
+2025-10-10 19:24:20.788 | INFO     | collector.StockCollector:collect_all_stocks:147 - 🚀 Starting stock collection from Mubasher API
+2025-10-10 19:24:20.789 | INFO     | collector.StockCollector:_fetch_stocks_arabic:44 - 🌐 Fetching Arabic stocks from: https://www.mubasher.info/api/1/listed-companies?country=eg&size=600&start=0
+2025-10-10 19:24:20.791 | INFO     | collector.StockCollector:_fetch_stocks_english:67 - 🌐 Fetching English stocks from: https://english.mubasher.info/api/1/listed-companies?country=eg&size=600&start=0
+2025-10-10 19:24:20.793 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:24:20.794 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0007 seconds
+2025-10-10 19:24:20.799 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:24:20.812 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_ar
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:24:20.813 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:20.814 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:20.961 | INFO     | collector.StockCollector:_fetch_stocks_arabic:50 - ✅ Fetched 274 Arabic stocks from page 0
+2025-10-10 19:24:20.968 | INFO     | collector.StockCollector:_fetch_stocks_english:73 - ✅ Fetched 274 English stocks from page 0
+2025-10-10 19:24:20.970 | INFO     | collector.StockCollector:collect_all_stocks:170 - 📄 Collected page 1/1 with 274 stocks
+2025-10-10 19:24:20.970 | INFO     | collector.StockCollector:collect_all_stocks:185 - ✅ Collected total of 274 stocks
+2025-10-10 19:24:21.639 | INFO     | collector.StockCollector:save_stocks_to_db:264 - 💾 Saved/updated 274 stocks in database
+2025-10-10 19:24:21.640 | INFO     | collector.StockCollector:collect_and_save_stocks:292 - 🎉 Stock collection completed: 274 stocks processed
+2025-10-10 19:24:21.640 | INFO     | collector.StockCollector:run_stock_collection:360 - ✅ Stock collection completed: 274 stocks processed
+2025-10-10 19:24:21.641 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:24:21.642 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0007 seconds
+2025-10-10 19:24:21.684 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:24:21.698 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_ar
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:24:21.699 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:22.064 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x72738c8dd250>,), kwargs: {}
+2025-10-10 19:24:22.064 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0006 seconds
+2025-10-10 19:24:22.069 | INFO     | collector.StockCollector:get_stocks_db:306 - 📊 Retrieved 274 active stocks from database
+2025-10-10 19:24:22.081 | ERROR    | shared.custom_logging:log_error_with_exception:30 - ❌ Error retrieving stocks from database | Exception: ValidationError: 1 validation error for StockResponse
+sector_ar
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type | File: /usr/local/lib/python3.9/site-packages/pydantic/main.py:250
+2025-10-10 19:24:22.082 | INFO     | collector.StockCollector:run_get_stocks:344 - ✅ Stock got from the Database: 0 stocks returned
+2025-10-10 19:24:22.083 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 0 stocks returned

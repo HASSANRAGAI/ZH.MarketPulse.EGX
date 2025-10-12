@@ -1,0 +1,10 @@
+2025-10-10 16:30:27.663 | INFO     | collector.api.app:startup_event:64 - 🚀 Starting Collector Microservice
+2025-10-10 16:30:27.664 | INFO     | shared.db_init:initialize_database:132 - 🚀 Starting database initialization...
+2025-10-10 16:30:27.666 | INFO     | shared.db_init:create_database_schema:41 - Creating database schema...
+2025-10-10 16:30:27.747 | INFO     | shared.db_init:create_database_schema:43 - ✅ Database schema created successfully
+2025-10-10 16:30:27.751 | INFO     | shared.db_init:seed_config_data:57 - Seeding configuration data...
+2025-10-10 16:30:27.796 | INFO     | shared.db_init:seed_config_data:94 - ✅ Configuration data seeded successfully
+2025-10-10 16:30:27.798 | INFO     | shared.db_init:initialize_database:155 - 🎉 Database initialization completed successfully!
+2025-10-10 16:30:27.799 | INFO     | collector.api.app:startup_event:73 - ✅ Database initialized successfully
+2025-10-10 16:30:27.801 | INFO     | collector.api.app:startup_event:81 - ✅ Database connection established
+2025-10-10 16:53:51.201 | INFO     | collector.api.app:shutdown_event:88 - 🛑 Shutting down Collector Microservice

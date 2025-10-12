@@ -1,0 +1,73 @@
+﻿.fair-values-page {
+  padding: 20px;
+  background: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.fair-values-page .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/*.fair-values-page .e-card {*/
+/*  width: 100%;*/
+/*  max-width: 400px;*/
+/*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);*/
+/*  border-radius: 8px;*/
+/*  overflow: hidden;*/
+/*  background: #2d2d2d;*/
+/*  color: #fff;*/
+/*  transition: transform 0.2s;*/
+/*}*/
+
+/*.fair-values-page .e-card:hover {*/
+/*  transform: translateY(-5px);*/
+/*  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);*/
+/*}*/
+
+.fair-values-page .card-header {
+  background: #3a3a3a;
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.fair-values-page .card-header h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.fair-values-page .card-header.recommendation-buy {
+  background: rgba(0, 255, 0, 0.3);
+}
+
+.fair-values-page .card-header.recommendation-sell {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.fair-values-page .card-content {
+  padding: 15px;
+}
+
+.fair-values-page .card-content p {
+  margin: 5px 0;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+.fair-values-page .card-content strong {
+  color: #fff;
+}
+
+.recommendation-buy {
+  color: green;
+  font-weight: bold;
+}
+
+.recommendation-sell {
+  color: red;
+  font-weight: bold;
+}

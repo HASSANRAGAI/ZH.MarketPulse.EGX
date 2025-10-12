@@ -1,0 +1,19 @@
+2025-10-10 18:13:46.267 | INFO     | collector.api.app:startup_event:64 - 🚀 Starting Collector Microservice
+2025-10-10 18:13:46.268 | INFO     | shared.db_init:initialize_database:132 - 🚀 Starting database initialization...
+2025-10-10 18:13:46.271 | INFO     | shared.db_init:create_database_schema:41 - Creating database schema...
+2025-10-10 18:13:46.285 | INFO     | shared.db_init:create_database_schema:43 - ✅ Database schema created successfully
+2025-10-10 18:13:46.290 | INFO     | shared.db_init:seed_config_data:57 - Seeding configuration data...
+2025-10-10 18:13:46.349 | INFO     | shared.db_init:seed_config_data:94 - ✅ Configuration data seeded successfully
+2025-10-10 18:13:46.350 | INFO     | shared.db_init:initialize_database:155 - 🎉 Database initialization completed successfully!
+2025-10-10 18:13:46.351 | INFO     | collector.api.app:startup_event:73 - ✅ Database initialized successfully
+2025-10-10 18:13:46.353 | INFO     | collector.api.app:startup_event:81 - ✅ Database connection established
+2025-10-10 18:19:10.401 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x7e619eff93d0>,), kwargs: {}
+2025-10-10 18:19:10.402 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0007 seconds
+2025-10-10 18:19:10.414 | INFO     | collector.StockCollector:get_stocks_db:292 - 📊 Retrieved 275 active stocks from database
+2025-10-10 18:19:10.418 | INFO     | collector.StockCollector:run_get_stocks:330 - ✅ Stock got from the Database: 275 stocks returned
+2025-10-10 18:19:10.419 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 275 stocks returned
+2025-10-10 18:19:10.717 | INFO     | shared.custom_logging:wrapper:39 - Starting get_stocks_db with args: (<collector.StockCollector.StockCollector object at 0x7e619eff93d0>,), kwargs: {}
+2025-10-10 18:19:10.718 | INFO     | shared.custom_logging:wrapper:43 - Finished get_stocks_db in 0.0007 seconds
+2025-10-10 18:19:10.724 | INFO     | collector.StockCollector:get_stocks_db:292 - 📊 Retrieved 275 active stocks from database
+2025-10-10 18:19:10.728 | INFO     | collector.StockCollector:run_get_stocks:330 - ✅ Stock got from the Database: 275 stocks returned
+2025-10-10 18:19:10.729 | INFO     | collector.api.routes.stocks:get_stocks:81 - ✅ Stock got from the Database: 275 stocks returned

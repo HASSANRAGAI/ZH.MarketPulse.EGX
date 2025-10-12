@@ -1,0 +1,58 @@
+{
+  "mubasher_endpoints": {
+    "arabic_base": "https://www.mubasher.info/",
+    "english_base": "https://english.mubasher.info/",
+    "listed_companies": "api/1/listed-companies?country=eg&size={size}&start={start}",
+    "fairValues": "api/1/fairValues?country=eg&size={size}&start={start}",
+    "ipos": "api/1/ipos?country=eg&size={size}&start={start}",
+    "capital_increases": "api/1/capital-increase?country=eg&size={size}&start={start}",
+    "earnings": "api/1/earnings?country=eg&size={size}&start={start}",
+    "insider_trades": "api/1/insider-trades?country=eg&size={size}&start={start}",
+    "news": "markets/EGX/stocks/{symbol}/news",
+    "announcements": "markets/EGX/stocks/{symbol}/announcements",
+    "profile": "markets/EGX/stocks/{symbol}/profile",
+    "max_size": 30,
+    "request_delay": 1.0,
+    "max_retries": 3
+  },
+  "chrome_options": {
+    "headless": true,
+    "no_sandbox": true,
+    "disable_dev_shm_usage": true,
+    "disable_gpu": true,
+    "window_size": "1920,1080",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  },
+  "retry": {
+    "max_attempts": 3,
+    "base_delay": 2,
+    "max_delay": 30,
+    "backoff_factor": 2,
+    "jitter_range": [0.5, 1.5],
+    "retryable_exceptions": ["TimeoutException", "WebDriverException", "ConnectionError", "OSError"],
+    "non_retryable_exceptions": ["ValueError", "TypeError", "KeyboardInterrupt"]
+  },
+  "database": {
+    "default_url": "postgresql://user:pass@localhost/db",
+    "pool_size": 10,
+    "max_overflow": 20,
+    "pool_timeout": 30,
+    "pool_recycle": 3600
+  },
+  "http": {
+    "timeout": 30.0,
+    "max_connections": 100,
+    "max_keepalive_connections": 20,
+    "retry": {
+      "max_attempts": 3,
+      "base_delay": 1.0,
+      "max_delay": 60.0
+    }
+  },
+  "ai": {
+    "model_path": "data/models/",
+    "confidence_threshold": 0.7,
+    "batch_size": 32,
+    "epochs": 100
+  }
+}
