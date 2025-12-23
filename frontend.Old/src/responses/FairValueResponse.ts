@@ -1,4 +1,4 @@
-﻿export interfaces FairValueResponse {
+﻿export interface FairValueResponse {
   id: number;
   symbol: string;
   released_at?: string;

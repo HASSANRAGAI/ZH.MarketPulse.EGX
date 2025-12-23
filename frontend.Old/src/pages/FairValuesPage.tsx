@@ -40,34 +40,63 @@ const FairValuesPage: React.FC = () => {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
+  // return (
+  //   // <div className="fair-values-page">
+  //   //   <h1>Fair Values</h1>
+  //     <div  style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', padding: '20px' }}>
+  //       {fairValues.map((fv) => (
+  //         <div key={fv.id} className={`e-card ${getRecommendationClass(fv.recommendation)}`} style={{ width: '300px', margin: '10px' }}>
+  //           <div className="e-card-header">
+  //             <div className="e-card-header-caption">
+  //               <div className="e-card-title">{fv.symbol} - Fair Value</div>
+  //             </div>
+  //           </div>
+  //           <div className="e-card-conten">
+  //             <p><strong>Source:</strong> {fv.source} {fv.source_ar && `(${fv.source_ar})`}</p>
+  //             <p><strong>Recommendation:</strong> <span className={getRecommendationClass(fv.recommendation)}>{fv.recommendation}</span> {fv.recommendation_ar && `(${fv.recommendation_ar})`}</p>
+  //             <p><strong>Market:</strong> {fv.market}</p>
+  //             <p><strong>Sector:</strong> {fv.sector}</p>
+  //             <p><strong>Value:</strong> {fv.value ? `${fv.value}` : 'N/A'}</p>
+  //             <p><strong>Price:</strong> {fv.price ? `${fv.price}` : 'N/A'}</p>
+  //             <p><strong>Last Price:</strong> {fv.last_price ? `${fv.last_price}` : 'N/A'}</p>
+  //             <p><strong>Change:</strong> {fv.change ? `${fv.change}` : 'N/A'}</p>
+  //             <p><strong>Change %:</strong> {fv.change_percentage ? `${fv.change_percentage}%` : 'N/A'}</p>
+  //             <p><strong>Released At:</strong> {fv.released_at || 'N/A'}</p>
+  //           </div>
+  //         </div>
+  //       ))}
+  //     </div>
+  //   // </div>
+  // );
+
+
   return (
-    // <div className="fair-values-page">
-    //   <h1>Fair Values</h1>
-      <div  style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', padding: '20px' }}>
+      <div className="fair-values-page">
+        <h1>Fair Values</h1>
+      <div className="cards-container">
         {fairValues.map((fv) => (
-          <div key={fv.id} className={`e-card ${getRecommendationClass(fv.recommendation)}`} style={{ width: '300px', margin: '10px' }}>
-            <div className="e-card-header">
-              <div className="e-card-header-caption">
-                <div className="e-card-title">{fv.symbol} - Fair Value</div>
-              </div>
+           <div key={fv.id} className={`e-card ${getRecommendationClass(fv.recommendation)}`} style={{ width: '300px', margin: '10px' }}>
+            <div className="card-header">
+              <h3>{fv.symbol} - Fair Value</h3>
             </div>
-            <div className="e-card-conten">
-              <p><strong>Source:</strong> {fv.source} {fv.source_ar && `(${fv.source_ar})`}</p>
-              <p><strong>Recommendation:</strong> <span className={getRecommendationClass(fv.recommendation)}>{fv.recommendation}</span> {fv.recommendation_ar && `(${fv.recommendation_ar})`}</p>
-              <p><strong>Market:</strong> {fv.market}</p>
-              <p><strong>Sector:</strong> {fv.sector}</p>
-              <p><strong>Value:</strong> {fv.value ? `${fv.value}` : 'N/A'}</p>
-              <p><strong>Price:</strong> {fv.price ? `${fv.price}` : 'N/A'}</p>
-              <p><strong>Last Price:</strong> {fv.last_price ? `${fv.last_price}` : 'N/A'}</p>
-              <p><strong>Change:</strong> {fv.change ? `${fv.change}` : 'N/A'}</p>
-              <p><strong>Change %:</strong> {fv.change_percentage ? `${fv.change_percentage}%` : 'N/A'}</p>
-              <p><strong>Released At:</strong> {fv.released_at || 'N/A'}</p>
-            </div>
+            <div className="card-content">
+             <p><strong>Source:</strong> {fv.source} {fv.source_ar && `(${fv.source_ar})`}</p>
+               <p><strong>Recommendation:</strong> <span className={getRecommendationClass(fv.recommendation)}>{fv.recommendation}</span> {fv.recommendation_ar && `(${fv.recommendation_ar})`}</p>
+               <p><strong>Market:</strong> {fv.market}</p>
+               <p><strong>Sector:</strong> {fv.sector}</p>
+               <p><strong>Value:</strong> {fv.value ? `${fv.value}` : 'N/A'}</p>
+               <p><strong>Price:</strong> {fv.price ? `${fv.price}` : 'N/A'}</p>
+               <p><strong>Last Price:</strong> {fv.last_price ? `${fv.last_price}` : 'N/A'}</p>
+               <p><strong>Change:</strong> {fv.change ? `${fv.change}` : 'N/A'}</p>
+               <p><strong>Change %:</strong> {fv.change_percentage ? `${fv.change_percentage}%` : 'N/A'}</p>
+               <p><strong>Released At:</strong> {fv.released_at || 'N/A'}</p>
+          </div>
           </div>
         ))}
       </div>
-    // </div>
+    </div>
   );
+
 };
 
 export default FairValuesPage;
