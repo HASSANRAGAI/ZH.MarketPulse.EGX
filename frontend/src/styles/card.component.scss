@@ -1,0 +1,12 @@
+﻿.control-pane { padding: 12px; }
+.card-control-section.horizontal_card_layout { margin: 0 auto; }
+.e-card-resize-container .row { display: flex; flex-wrap: wrap; }
+.row.card-layout > div { box-sizing: border-box; padding: 8px; }
+.e-card { border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,.4); }
+.e-card-horizontal { display: flex; align-items: stretch; }
+.e-card-horizontal .e-card-stacked { flex: 1; padding: 12px; }
+.e-card-header-title { font-size: 1rem; font-weight: 600; }
+.e-card-sub-title { font-size: .75rem; opacity: .8; }
+.e-card-actions { display: flex; gap: 8px; padding: 8px 0; }
+@media (max-width: 768px) { .e-card-horizontal { flex-direction: column; } }
+

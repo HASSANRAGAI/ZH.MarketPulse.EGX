@@ -1,0 +1,15 @@
+﻿body {
+  background: rgb(var(--color-sf-surface));
+  color: rgb(var(--color-sf-on-background));
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgb(var(--color-sf-surface-variant));
+  color: rgb(var(--color-sf-on-surface));
+}
